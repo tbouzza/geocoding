@@ -16,6 +16,7 @@ class FlatsController < ApplicationController
 
   # GET /flats/1
   def show
+    @marker = [{ lat: @flat.latitude, lng: @flat.longitude }]
   end
 
   # GET /flats/new
